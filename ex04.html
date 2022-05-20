@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Recuperando Dados - POST</title>
+</head>
+
+<body>
+    <h2>Formulario Recuperando Dados - POST</h2>
+    <form name="Cadastro" action="ex04.php" method="post">
+        <strong> O que você achou do site? </strong> <br><br>
+        <input type="radio" name="radio" value="MB" required>Muito Bom
+        <input type="radio" name="radio" value="B">Bom
+        <input type="radio" name="radio" value="R">Regular <br><br>
+
+        <select name="filmes">
+
+            <option value="#"> Em cartaz </option>
+            <option value="BT"> Batman </option>
+            <option value="DE"> Doutor Estranho </option>
+            <option value="HA"> Homem Aranha </option>
+            <option value="CR"> Coringa </option>
+            <option value="OV"> Os vingadores </option>
+
+        </select>
+
+        <strong>Outros:</strong>
+        <input type="text" name="others"><br><br>
+
+        <strong>Digite seus comentário no campo abaixo:</strong> <br><br>
+        <textarea type="field" name="message" placeholder="Descreva o motivo do seu contato"></textarea>
+
+        <br><br>
+        <strong>Nome:</strong>
+        <input type="text" name="name"><br><br>
+        <strong>E-mail</strong>
+        <input type="password" name="e-Mail"><br><br>
+        <strong>Telefone</strong>
+        <input type="text" name="phone"><br><br>
+
+        <input type="checkbox" name="check" required>Quero receber as novidades do site por e-mail<br><br>
+
+        <br><br>
+        <input type="submit" name="Enviar Dados">
+        <input type="reset" name="Limpar Formulário">
+    </form>
+</body>
+
+</html>
